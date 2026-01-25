@@ -1,0 +1,81 @@
+Politique de Confidentialité (RGPD)
+
+L’association [NOM DE VOTRE ASSOCIATION] attache une grande importance à la protection de vos données personnelles et au respect de votre vie privée. Cette politique vous informe sur la manière dont nous traitons les données collectées via notre site.
+
+1. Responsable du traitement
+
+Le responsable du traitement des données est l'association [NOM DE VOTRE ASSOCIATION], représentée par son Président en exercice.
+
+2. Données collectées
+
+Nous sommes susceptibles de collecter et traiter les données suivantes :
+
+Données d'identification : Nom, prénom.
+
+Coordonnées : Adresse e-mail, numéro de téléphone, adresse postale.
+
+Données d'adhésion : Informations nécessaires à votre inscription en tant que membre.
+
+Données de navigation : Adresse IP, cookies (voir section dédiée).
+
+3. Finalités de la collecte
+
+Vos données sont collectées pour des finalités déterminées, explicites et légitimes :
+
+Gestion de la relation avec les adhérents (convocations aux assemblées générales, appels de cotisation).
+
+Réponse aux demandes envoyées via les formulaires de contact.
+
+Envoi d'informations sur les activités de l'association (newsletter).
+
+Gestion des dons et émission des reçus fiscaux (le cas échéant).
+
+4. Base légale du traitement
+
+Le traitement de vos données repose sur l'un des fondements suivants :
+
+Votre consentement (ex: inscription à la newsletter).
+
+L'exécution d'un contrat (ex: gestion de votre adhésion).
+
+L'intérêt légitime de l'association (ex: assurer la sécurité et le bon fonctionnement du site).
+
+5. Durée de conservation
+
+Nous conservons vos données uniquement le temps nécessaire aux opérations pour lesquelles elles ont été collectées :
+
+Adhérents : durée de l'adhésion augmentée des délais de prescription légale.
+
+Prospects / Contacts : maximum 3 ans après le dernier contact.
+
+Donateurs : 10 ans (obligation fiscale).
+
+6. Destinataires des données
+
+Les données sont exclusivement destinées aux membres du bureau et aux bénévoles habilités de l'association. Elles ne sont jamais vendues, louées ou cédées à des tiers à des fins commerciales.
+
+7. Vos droits
+
+Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+
+Droit d'accès : savoir quelles données nous détenons sur vous.
+
+Droit de rectification : demander la modification de données inexactes.
+
+Droit à l'effacement : demander la suppression de vos données.
+
+Droit d'opposition : refuser le traitement de vos données pour un motif légitime.
+
+Pour exercer ces droits, vous pouvez nous contacter par e-mail à : a.heldt@greenelysium4.org.
+
+8. Sécurité
+
+L'association met en œuvre toutes les mesures techniques et organisationnelles nécessaires pour garantir la sécurité et la confidentialité de vos données personnelles contre toute perte, accès non autorisé ou détournement.
+
+9. Cookies
+
+Le site utilise des cookies techniques et de mesure d'audience pour améliorer votre expérience de navigation. Vous pouvez paramétrer votre navigateur pour refuser ces cookies, bien que cela puisse limiter certaines fonctionnalités du site.
+
+10. Droit applicable
+
+La présente politique de confidentialité est soumise au droit français. En cas de litige, compétence expresse est attribuée aux tribunaux français.
