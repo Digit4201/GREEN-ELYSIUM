@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN ELYSIUM - Protection Environnementale</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+        }
+        
+        .section-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 24px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #2a5298;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+        }
+        
+        .progress-bar {
+            animation: progressAnimation 2s ease-out;
+        }
+        
+        @keyframes progressAnimation {
+            from { width: 0; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .counter {
+            animation: countUp 2s ease-out;
+        }
+        
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .badge-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-open {
+            max-height: 500px;
+        }
+        
+        .map-container {
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+        }
+        
+        .map-marker {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+   <header class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <!-- Conteneur flex centré -->
+    <div class="flex items-center justify-center py-4">
+      <!-- Lien avec logo et texte groupés -->
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-16 md:h-20 w-auto">
+        <div class="text-center md:text-left">
+          <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight">
+            GREEN ELYSIUM
+          </h1>
+          <p class="text-xs text-gray-600">
+            Association à but non lucratif Agréée • Protection Environnementale
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+        <!-- Bouton menu visible uniquement sur mobile -->
+        <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+        
+        <!-- Navigation -->
+        <nav class="bg-blue-900 text-white">
+            <div class="container mx-auto px-4">
+                <ul id="navMenu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 py-3">
+                    <li><a href="index.html" class="nav-link block py-2 hover:text-yellow-400 transition">Accueil</a></li>
+                    <li><a href="mission.html" class="nav-link block py-2 hover:text-yellow-400 transition">Nos Missions</a></li>
+                    <li><a href="projets.html" class="nav-link block py-2 hover:text-yellow-400 transition">Projets</a></li>
+                    <li><a href="actions.html" class="nav-link block py-2 hover:text-yellow-400 transition">Nos Actions</a></li>
+                    <li><a href="partenaires.html" class="nav-link block py-2 hover:text-yellow-400 transition">Partenaires</a></li>
+                    <li><a href="contact.html" class="nav-link active block py-2 text-yellow-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="fade-in">
+                    <span class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold badge-pulse">
+                        Association Officielle depuis 2026
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-6 mb-4">Écologie appliquée. Résultats mesurables.</h2>
+                    <p class="text-lg mb-6 text-blue-100">
+                        Green Elysium est une organisation environnementale spécialisée dans la conception et la mise en œuvre de projets environnementaux appliqués, fondés sur des données terrain, des méthodes rigoureuses et des partenariats académiques et publics.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="scrollToSection('missions')" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105">
+                            Découvrir nos missions
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="bg-white/20 backdrop-blur hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition">
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://picsum.photos/seed/forest/600/400" alt="Forêt tropicale" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missions Section -->
+    <section id="missions" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nous intervenons principalement sur :</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Des actions concrètes pour préserver l'environnement et améliorer les conditions de vie des populations locales
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border-l-4 border-green-600 pl-6 card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">La valorisation des résidus végétaux et agricoles</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nous transformons les résidus végétaux et agricoles en ressources utiles, réduisant le gaspillage et créant de nouvelles opportunités économiques.
+Ces matières deviennent des intrants précieux pour l’agriculture, l’énergie ou la production de matériaux durables. 
+                    </p>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+                
+                <div class="border-l-4 border-blue-600 pl-6 card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mountain text-blue-500 text-4xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">La régénération des sols dégradés</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nous restaurons durablement les sols dégradés en améliorant leur fertilité et leur structure.
+Cela permet d’accroître la productivité agricole tout en préservant les écosystèmes et la biodiversité locale.
+                    </p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+                
+                <div class="border-l-4 border-purple-600 pl-6 card-hover">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-exchange-alt text-purple-500 text-4xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">La transition progressive des systèmes de production</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nous accompagnons les producteurs dans l’adoption de pratiques agricoles plus durables et résilientes.
+Cette transition se fait de manière progressive, adaptée aux réalités locales, pour garantir l’efficacité et l’adhésion des communautés.
+                    </p>
+                    <div class="flex items-center text-purple-600 font-semibold">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-orange-500 pl-6 card-hover">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-sync-alt text-orange-500 text-4xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">La création de capacités locales durables</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nous développons des compétences et des savoir-faire locaux pour renforcer l’autonomie des communautés.
+Ces capacités permettent de construire une économie agricole résiliente, pérenne et mesurable, capable de perdurer dans le temps.
+                    </p>
+                    <div class="flex items-center text-purple-600 font-semibold">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="py-16 section-gradient">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nos Projets en Cours</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://picsum.photos/seed/thailand-project/600/300" alt="Projet Thaïlande" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">
+                                <i class="fas fa-map-marker-alt mr-1"></i> Thaïlande+France
+                            </span>
+                            <span class="text-sm text-gray-500">En cours depuis 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Projet – Valorisation des résidus végétaux par le biochar</h3>
+                        <p class="text-gray-600 mb-4">
+                            Projet pilote- Problématique
+Accumulation de résidus végétaux, brûlage à l’air libre, dégradation progressive des sols.
+                        </p>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-gray-600">Progression</span>
+                                <span class="font-semibold">5%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-green-500 to-yellow-500 h-2 rounded-full progress-bar" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Actions Timeline -->
+    <section id="actions" class="py-16 section-gradient">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Nos Actions Récentes et en cour de préparation</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+                    
+                    <div class="relative mb-8 pl-16 timeline-item">
+                        <div class="absolute left-8 top-0 w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+                        <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                            <span class="text-sm text-gray-500">Janvier 2026</span>
+                            <h3 class="text-lg font-bold text-blue-900 mt-2">Préparation de projets pilotes sur le terrain</h3>
+                            <p class="text-gray-600 mt-2">
+                                Nous identifions les zones et les agriculteurs partenaires pour tester l'utilisation du biochar et des pratique agricoles du rables, afin de lancer nos projets dans des conditions optimales.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mb-8 pl-16 timeline-item">
+                        <div class="absolute left-8 top-0 w-4 h-4 bg-green-600 rounded-full border-4 border-white"></div>
+                        <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                            <span class="text-sm text-gray-500">Janvier 2026</span>
+                            <h3 class="text-lg font-bold text-blue-900 mt-2">Planification de formation pratiques pour les agriculteurs</h3>
+                            <p class="text-gray-600 mt-2">
+                                Nous concevons des sessions de formation adaptées aux besoins locaux, pour apprendre à produire et utiliser le biochar et améliorer la fertilité des sols dès le lancement des projets.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mb-8 pl-16 timeline-item">
+                        <div class="absolute left-8 top-0 w-4 h-4 bg-yellow-500 rounded-full border-4 border-white"></div>
+                        <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                            <span class="text-sm text-gray-500">Janvier 2026</span>
+                            <h3 class="text-lg font-bold text-blue-900 mt-2">Collecte et analyse des informations pour optimiser nos méthodes</h3>
+                            <p class="text-gray-600 mt-2">
+                                Nous centralisons les données existantes et les bonnes pratiques afin de concevoir des projets efficaces et reproductibles dès leur mise en œuvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partenaires" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Nos Partenaires</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                <p class="text-gray-600 mt-4">Des collaborations solides pour un impact maximal</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="bg-gray-50 p-8 rounded-lg flex items-center justify-center h-24 card-hover">
+                    <i class="fas fa-university text-4xl text-blue-900"></i>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg flex items-center justify-center h-24 card-hover">
+                    <i class="fas fa-globe-asia text-4xl text-green-600"></i>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg flex items-center justify-center h-24 card-hover">
+                    <i class="fas fa-handshake text-4xl text-purple-600"></i>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg flex items-center justify-center h-24 card-hover">
+                    <i class="fas fa-leaf text-4xl text-green-600"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
+                    <p class="text-blue-200 mb-8">
+                        Rejoignez notre mission pour un environnement plus propre et durable. 
+                        Votre soutien compte !
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-400 w-6"></i>
+                            <span class="ml-4">contact@greenelysium4.org</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-yellow-400 w-6"></i>
+                            <span class="ml-4">Lun-Ven : 9h00-18h00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+              <div class="bg-white text-blue-900 rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
+    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation" novalidate>
+        <!-- ✅ URL de VOTRE page de remerciement -->
+        <input type="hidden" name="_next" value="https://votre-site.com/merci.html" />
+        
+        <!-- ✅ Message automatique - nécessite _replyto ci-dessous -->
+        <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
+        
+        <!-- ✅ Sujet de l'email que vous recevrez -->
+        <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
+        
+        <!-- ✅ Piège anti-spam - le cacher avec CSS -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
+            
+            <!-- ✅ CRITIQUE : Utilisez _replyto (avec underscore) -->
+            <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
+        </div>
+        
+        <input type="text" name="subject" placeholder="Sujet" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500">
+        
+        <textarea name="message" placeholder="Votre message*" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500" required></textarea>
+        
+        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 rounded-lg transition">
+            Envoyer le message
+        </button>
+    </form>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-3 mb-4">
+                        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-10 w-auto">
+                        <span class="font-bold">GREEN ELYSIUM</span>
+                    </a>
+                    <p class="text-gray-400 text-sm">
+                        Association française dédiée à la protection environnementale.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#accueil" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#missions" class="hover:text-white transition">Missions</a></li>
+                        <li><a href="#projets" class="hover:text-white transition">Projets</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Documents</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="CR-ListeDirigeant.pdf" class="hover:text-white transition">Statuts</a></li>
+                        <li><a href="Mention Légal.txt" class="hover:text-white transition">Mentions légales</a></li>
+                        <li><a href="Politique de confidentialité.txt" class="hover:text-white transition">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Abonnez-vous pour recevoir nos actualités
+                    </p>
+                    <form class="flex" onsubmit="handleNewsletter(event)">
+                        <input type="email" placeholder="Votre email" class="flex-1 px-4 py-2 rounded-l-lg text-gray-900 focus:outline-none" required>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-4 py-2 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 GREEN ELYSIUM. Tous droits réservés. | Agrément N° W173011218</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+        
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Message envoyé avec succès! Nous vous répondrons dans les plus brefs délais.');
+            event.target.reset();
+        }
+        
+        // Handle newsletter subscription
+        function handleNewsletter(event) {
+            event.preventDefault();
+            alert('Inscription à la newsletter réussie! Merci de votre intérêt.');
+            event.target.reset();
+        }
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Add shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
