@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<link rel="icon" type="image/x-icon" href="assets\favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LQPMT1NDP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-6LQPMT1NDP');
 </script>
 
@@ -50,6 +49,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         .section-gradient {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .don-gradient {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
         }
         
         .card-hover {
@@ -160,6 +163,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
+
+        /* HelloAsso widget container */
+        .helloasso-wrapper {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+
+        .don-icon-pulse {
+            animation: iconPulse 2.5s infinite;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.12); }
+        }
     </style>
 </head>
 <body>
@@ -167,6 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPXW88GM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
      <!-- Header -->
    <header class="bg-grey-600 shadow-lg sticky top-0 z-50">
   <div class="container mx-auto px-4">
@@ -186,17 +208,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
     </div>
   </div>
-</header>
 
         <!-- Bouton menu visible uniquement sur mobile -->
         <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </button>
-      </div>
 
-    </div>
-  </div>
-        
         <!-- Navigation -->
         <nav class="bg-blue-900 text-white">
             <div class="container mx-auto px-4">
@@ -234,7 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="assets\champs.png" alt="Forêt tropicale" class="rounded-lg shadow-2xl">
+                    <img src="assets/champs.png" alt="Forêt tropicale" class="rounded-lg shadow-2xl">
                 </div>
             </div>
         </div>
@@ -259,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">La valorisation des résidus végétaux et agricoles</h3>
                     <p class="text-gray-600 mb-4">
                         Nous transformons les résidus végétaux et agricoles en ressources utiles, réduisant le gaspillage et créant de nouvelles opportunités économiques.
-Ces matières deviennent des intrants précieux pour l’agriculture, l’énergie ou la production de matériaux durables. 
+Ces matières deviennent des intrants précieux pour l'agriculture, l'énergie ou la production de matériaux durables. 
                     </p>
                     <div class="flex items-center text-green-600 font-semibold">
                         <span>En savoir plus</span>
@@ -274,7 +291,7 @@ Ces matières deviennent des intrants précieux pour l’agriculture, l’énerg
                     <h3 class="text-xl font-bold text-blue-900 mb-3">La régénération des sols dégradés</h3>
                     <p class="text-gray-600 mb-4">
                         Nous restaurons durablement les sols dégradés en améliorant leur fertilité et leur structure.
-Cela permet d’accroître la productivité agricole tout en préservant les écosystèmes et la biodiversité locale.
+Cela permet d'accroître la productivité agricole tout en préservant les écosystèmes et la biodiversité locale.
                     </p>
                 </div>
                 
@@ -284,8 +301,8 @@ Cela permet d’accroître la productivité agricole tout en préservant les éc
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">La transition progressive des systèmes de production</h3>
                     <p class="text-gray-600 mb-4">
-                        Nous accompagnons les producteurs dans l’adoption de pratiques agricoles plus durables et résilientes.
-Cette transition se fait de manière progressive, adaptée aux réalités locales, pour garantir l’efficacité et l’adhésion des communautés.
+                        Nous accompagnons les producteurs dans l'adoption de pratiques agricoles plus durables et résilientes.
+Cette transition se fait de manière progressive, adaptée aux réalités locales, pour garantir l'efficacité et l'adhésion des communautés.
                     </p>
                 </div>
 
@@ -295,10 +312,9 @@ Cette transition se fait de manière progressive, adaptée aux réalités locale
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">La création de capacités locales durables</h3>
                     <p class="text-gray-600 mb-4">
-                        Nous développons des compétences et des savoir-faire locaux pour renforcer l’autonomie des communautés.
+                        Nous développons des compétences et des savoir-faire locaux pour renforcer l'autonomie des communautés.
 Ces capacités permettent de construire une économie agricole résiliente, pérenne et mesurable, capable de perdurer dans le temps.
                     </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -324,7 +340,7 @@ Ces capacités permettent de construire une économie agricole résiliente, pér
                         <h3 class="text-xl font-bold text-blue-900 mb-3">Projet – Valorisation des résidus végétaux par le biochar</h3>
                         <p class="text-gray-600 mb-4">
                             Projet pilote- Problématique
-Accumulation de résidus végétaux, brûlage à l’air libre, dégradation progressive des sols.
+Accumulation de résidus végétaux, brûlage à l'air libre, dégradation progressive des sols.
                         </p>
                         <div class="mb-4">
                             <div class="flex justify-between text-sm mb-1">
@@ -387,6 +403,66 @@ Accumulation de résidus végétaux, brûlage à l’air libre, dégradation pro
             </div>
         </div>
     </section>
+
+    <!-- ===================== DON / HELLOASSO SECTION ===================== -->
+    <section id="don" class="py-20 don-gradient text-white">
+        <div class="container mx-auto px-4">
+
+            <!-- En-tête -->
+            <div class="text-center mb-12">
+                <div class="flex justify-center mb-4">
+                    <div class="bg-white/20 rounded-full p-4 don-icon-pulse">
+                        <i class="fas fa-hand-holding-heart text-yellow-300 text-4xl"></i>
+                    </div>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Soutenez nos actions</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+                <p class="text-green-100 text-lg max-w-2xl mx-auto">
+                    Votre don ou adhésion nous permet de financer nos projets de terrain, de former les agriculteurs locaux et de régénérer des sols dégradés. Chaque contribution compte !
+                </p>
+            </div>
+
+            <!-- Avantages du don -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center card-hover border border-white/20">
+                    <i class="fas fa-shield-alt text-yellow-300 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Paiement sécurisé</h4>
+                    <p class="text-green-100 text-sm">Transactions sécurisées via HelloAsso, plateforme de référence pour les associations françaises agréées.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center card-hover border border-white/20">
+                    <i class="fas fa-chart-line text-yellow-300 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Impact mesurable</h4>
+                    <p class="text-green-100 text-sm">100% de votre don est reversé aux projets. Nous vous tenons informé de l'avancement de nos actions sur le terrain.</p>
+                </div>
+            </div>
+
+            <!-- Widget HelloAsso -->
+            <div class="max-w-4xl mx-auto">
+                <div class="helloasso-wrapper">
+                    <iframe
+                        id="haWidget"
+                        allowtransparency="true"
+                        scrolling="auto"
+                        src="https://www.helloasso.com/associations/green-elysium/formulaires/1/widget"
+                        style="width: 100%; height: 750px; border: none; display: block;"
+                        title="Formulaire de don HelloAsso - Green Elysium"
+                        onload="window.addEventListener('message', function(e) {
+                            if (e.data && e.data.height) {
+                                document.getElementById('haWidget').style.height = (e.data.height) + 'px';
+                            }
+                        });">
+                    </iframe>
+                </div>
+                <p class="text-center text-green-200 text-xs mt-4">
+                    <i class="fas fa-lock mr-1"></i>Paiement sécurisé · Propulsé par 
+                    <a href="https://www.helloasso.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition">HelloAsso</a>
+                    · Association agréée N° W173011218
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================= -->
 
     <!-- Partners Section -->
     <section id="partenaires" class="py-16 bg-white">
@@ -455,22 +531,13 @@ Accumulation de résidus végétaux, brûlage à l’air libre, dégradation pro
               <div class="bg-white text-blue-900 rounded-lg p-6">
     <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
     <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation" novalidate>
-        <!-- ✅ URL de VOTRE page de remerciement -->
         <input type="hidden" name="_next" value="https://votre-site.com/merci.html" />
-        
-        <!-- ✅ Message automatique - nécessite _replyto ci-dessous -->
         <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
-        
-        <!-- ✅ Sujet de l'email que vous recevrez -->
         <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
-        
-        <!-- ✅ Piège anti-spam - le cacher avec CSS -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
         <div class="grid md:grid-cols-2 gap-4 mb-4">
             <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
-            
-            <!-- ✅ CRITIQUE : Utilisez _replyto (avec underscore) -->
             <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
         </div>
         
@@ -507,6 +574,7 @@ Accumulation de résidus végétaux, brûlage à l’air libre, dégradation pro
                         <li><a href="#accueil" class="hover:text-white transition">Accueil</a></li>
                         <li><a href="#missions" class="hover:text-white transition">Missions</a></li>
                         <li><a href="#projets" class="hover:text-white transition">Projets</a></li>
+                        <li><a href="#don" class="hover:text-white transition">Faire un don</a></li>
                         <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
@@ -518,6 +586,14 @@ Accumulation de résidus végétaux, brûlage à l’air libre, dégradation pro
                         <li><a href="Mention Légal.txt" class="hover:text-white transition">Mentions légales</a></li>
                         <li><a href="Politique de confidentialité.txt" class="hover:text-white transition">Politique de confidentialité</a></li>
                     </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Nous soutenir</h4>
+                    <p class="text-gray-400 text-sm mb-4">Chaque geste compte pour la planète.</p>
+                    <a href="#don" class="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2 rounded-lg transition text-sm">
+                        <i class="fas fa-hand-holding-heart mr-2"></i>Faire un don
+                    </a>
                 </div>
             </div>
             
@@ -592,6 +668,16 @@ Accumulation de résidus végétaux, brûlage à l’air libre, dégradation pro
                 header.classList.add('shadow-xl');
             } else {
                 header.classList.remove('shadow-xl');
+            }
+        });
+
+        // HelloAsso widget dynamic height
+        window.addEventListener('message', function(e) {
+            if (e.data && e.data.height) {
+                const widget = document.getElementById('haWidget');
+                if (widget) {
+                    widget.style.height = e.data.height + 'px';
+                }
             }
         });
     </script>
