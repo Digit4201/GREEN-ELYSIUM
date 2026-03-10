@@ -1,11 +1,45 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="assets\favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Missions - GREEN ELYSIUM</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Nos Missions – Agriculture Durable & Régénération des Sols | GREEN ELYSIUM</title>
+    <meta name="description" content="Découvrez les 4 axes d'intervention de Green Elysium : agriculture durable, formation des agriculteurs, projets pilotes de biochar et autonomie des communautés rurales en France et Thaïlande.">
+    <meta name="keywords" content="missions green elysium, agriculture durable, biochar, régénération des sols, formation agriculteurs, projets pilotes, environnement">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.greenelysium.org/mission.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nos Missions – Agriculture Durable & Biochar | GREEN ELYSIUM">
+    <meta property="og:description" content="4 axes d'intervention : agriculture durable, formation des agriculteurs, projets pilotes et autonomie des communautés. Green Elysium agit pour l'environnement.">
+    <meta property="og:image" content="https://www.greenelysium.org/assets/Mission.png">
+    <meta property="og:url" content="https://www.greenelysium.org/mission.html">
+    <meta property="og:site_name" content="GREEN ELYSIUM">
+    <meta property="og:locale" content="fr_FR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nos Missions – Agriculture Durable & Biochar | GREEN ELYSIUM">
+    <meta name="twitter:description" content="4 axes d'intervention : agriculture durable, formation des agriculteurs, projets pilotes et autonomie des communautés.">
+    <meta name="twitter:image" content="https://www.greenelysium.org/assets/Mission.png">
+    <!-- JSON-LD WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Nos Missions – GREEN ELYSIUM",
+      "url": "https://www.greenelysium.org/mission.html",
+      "description": "Découvrez les 4 axes d'intervention de Green Elysium : agriculture durable, formation des agriculteurs, projets pilotes de biochar et autonomie des communautés rurales.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "GREEN ELYSIUM",
+        "url": "https://www.greenelysium.org"
+      }
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700&display=swap');
@@ -144,22 +178,37 @@
 </head>
 <body>
     <header class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto px-4">
-    <!-- Conteneur flex centré -->
-    <div class="flex items-center justify-center py-4">
-      <!-- Lien avec logo et texte groupés -->
+  <div class="container mx-auto px-6">
+    <div class="flex items-center justify-between py-3">
       <a href="index.html" class="flex items-center space-x-3">
-        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-16 md:h-20 w-auto">
-        <div class="text-center md:text-left">
-          <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight">
-            GREEN ELYSIUM
-          </h1>
-          <p class="text-xs text-gray-600">
-            Association à but non lucratif Agréée • Protection Environnementales
-          </p>
+        <img src="assets/Logo.jpg" alt="Logo GREEN ELYSIUM" class="h-14 w-auto" loading="lazy">
+        <div>
+          <h1 class="text-lg font-bold text-blue-900 leading-tight">GREEN ELYSIUM</h1>
+          <p class="text-xs text-gray-500">Association agréée • Protection Environnementale</p>
         </div>
       </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Accueil</a>
+        <a href="mission.html" class="nav-link text-yellow-400 font-semibold font-medium text-sm transition">Nos Missions</a>
+        <a href="projets.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Projets</a>
+        <a href="actions.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Actions</a>
+        <a href="partenaires.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Partenaires</a>
+        <a href="contact.html" class="bg-blue-900 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-blue-800 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()" aria-label="Ouvrir le menu de navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+    <nav id="navMenu" class="hidden md:hidden pb-3">
+      <div class="flex flex-col space-y-2">
+        <a href="index.html" class="text-yellow-500 font-semibold py-2 px-3 rounded">Accueil</a>
+        <a href="mission.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Missions</a>
+        <a href="projets.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Projets</a>
+        <a href="actions.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Actions</a>
+        <a href="partenaires.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Partenaires</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Contact</a>
+      </div>
+    </nav>
   </div>
 </header>
         <!-- Bouton menu visible uniquement sur mobile -->
@@ -172,18 +221,6 @@
   </div>
         
         <!-- Navigation -->
-        <nav class="bg-blue-900 text-white">
-            <div class="container mx-auto px-4">
-                <ul id="navMenu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 py-3">
-                    <li><a href="index.html" class="nav-link block py-2 hover:text-yellow-400 transition">Accueil</a></li>
-                    <li><a href="mission.html" class="nav-link active block py-2 text-yellow-400 transition">Nos Missions</a></li>
-                    <li><a href="projets.html" class="nav-link block py-2 hover:text-yellow-400 transition">Projets</a></li>
-                    <li><a href="actions.html" class="nav-link block py-2 hover:text-yellow-400 transition">Nos Actions</a></li>
-                    <li><a href="partenaires.html" class="nav-link block py-2 hover:text-yellow-400 transition">Partenaires</a></li>
-                    <li><a href="contact.html" class="nav-link block py-2 hover:text-yellow-400 transition">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -212,7 +249,7 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="assets\Mission.png" alt="Nos missions" class="rounded-lg shadow-2xl">
+                    <img src="assets/Mission.png" alt="Illustration des missions environnementales de Green Elysium : agriculture durable et biochar" class="rounded-lg shadow-2xl" loading="lazy">
                     <div class="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-lg shadow-xl">
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-globe-asia text-4xl icon-float"></i>
@@ -281,7 +318,7 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
                 <div class="grid md:grid-cols-2">
                     <div class="relative h-64 md:h-auto">
-                        <img src="assets\ecolo.png" alt="Reforestation" class="w-full h-full object-cover">
+                        <img src="assets/ecolo.png" alt="Agriculture durable et régénération des sols – Mission 1 de Green Elysium" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-full font-semibold">
                             <i class="fas fa-tree mr-2"></i>Mission 1
                         </div>
@@ -339,7 +376,7 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
                         </div>
                     </div>
                     <div class="relative h-64 md:h-auto order-1 md:order-2">
-                        <img src="https://picsum.photos/seed/education-env/800/600" alt="Éducation" class="w-full h-full object-cover">
+                        <img src="https://picsum.photos/seed/education-env/800/600" alt="Formation pratique des agriculteurs aux techniques d'agriculture durable – Mission 2" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
                             <i class="fas fa-book mr-2"></i>Mission 2
                         </div>
@@ -351,7 +388,7 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
                 <div class="grid md:grid-cols-2">
                     <div class="relative h-64 md:h-auto">
-                        <img src="https://picsum.photos/seed/sustainable-farm/800/600" alt="Agriculture durable" class="w-full h-full object-cover">
+                        <img src="https://picsum.photos/seed/sustainable-farm/800/600" alt="Projets pilotes d'agriculture durable et actions de terrain – Mission 3" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-4 py-2 rounded-full font-semibold">
                             <i class="fas fa-sun mr-2"></i>Mission 3
                         </div>
@@ -409,7 +446,7 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
                         </div>
                     </div>
                     <div class="relative h-64 md:h-auto order-1 md:order-2">
-                        <img src="https://picsum.photos/seed/water-protection/800/600" alt="Protection de l'eau" class="w-full h-full object-cover">
+                        <img src="https://picsum.photos/seed/water-protection/800/600" alt="Autonomie des communautés agricoles et protection de l'environnement – Mission 4" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute top-4 right-4 bg-cyan-600 text-white px-4 py-2 rounded-full font-semibold">
                             <i class="fas fa-tint mr-2"></i>Mission 4
                         </div>
@@ -442,16 +479,16 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
                     </div>
                     
                     <div class="flex space-x-4 mt-8">
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/green-elysium" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                        <a href="https://www.linkedin.com/company/green-elysium" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur LinkedIn" rel="noopener noreferrer" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/green_elysium_international/" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                        <a href="https://www.instagram.com/green_elysium_international/" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Instagram" rel="noopener noreferrer" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -459,14 +496,11 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
                 
                 <div class="bg-white text-blue-900 rounded-lg p-6">
     <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
-    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation" novalidate>
-        <!-- ✅ URL de VOTRE page de remerciement -->
-        <input type="hidden" name="_next" value="https://votre-site.com/merci.html" />
+    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation">
+        <input type="hidden" name="_next" value="https://www.greenelysium.org/merci.html" />
         
-        <!-- ✅ Message automatique - nécessite _replyto ci-dessous -->
         <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
         
-        <!-- ✅ Sujet de l'email que vous recevrez -->
         <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
         
         <!-- ✅ Piège anti-spam - le cacher avec CSS -->
@@ -475,7 +509,6 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
         <div class="grid md:grid-cols-2 gap-4 mb-4">
             <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
             
-            <!-- ✅ CRITIQUE : Utilisez _replyto (avec underscore) -->
             <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
         </div>
         
@@ -613,3 +646,6 @@ Cette approche vise à réconcilier performance environnementale, autonomie agri
     </script>
 </body>
 </html>
+
+
+

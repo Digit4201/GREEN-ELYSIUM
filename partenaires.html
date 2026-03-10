@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="assets\favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
     <meta charset="UTF-8">
     <title>Nos Partenaires - GREEN ELYSIUM</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -154,22 +154,37 @@
 </head>
 <body>
     <header class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto px-4">
-    <!-- Conteneur flex centré -->
-    <div class="flex items-center justify-center py-4">
-      <!-- Lien avec logo et texte groupés -->
+  <div class="container mx-auto px-6">
+    <div class="flex items-center justify-between py-3">
       <a href="index.html" class="flex items-center space-x-3">
-        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-16 md:h-20 w-auto">
-        <div class="text-center md:text-left">
-          <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight">
-            GREEN ELYSIUM
-          </h1>
-          <p class="text-xs text-gray-600">
-            Association à but non lucratif Agréée • Protection Environnementales
-          </p>
+        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-14 w-auto">
+        <div>
+          <h1 class="text-lg font-bold text-blue-900 leading-tight">GREEN ELYSIUM</h1>
+          <p class="text-xs text-gray-500">Association agréée • Protection Environnementale</p>
         </div>
       </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Accueil</a>
+        <a href="mission.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Missions</a>
+        <a href="projets.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Projets</a>
+        <a href="actions.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Actions</a>
+        <a href="partenaires.html" class="nav-link text-yellow-400 font-semibold font-medium text-sm transition">Partenaires</a>
+        <a href="contact.html" class="bg-blue-900 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-blue-800 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+    <nav id="navMenu" class="hidden md:hidden pb-3">
+      <div class="flex flex-col space-y-2">
+        <a href="index.html" class="text-yellow-500 font-semibold py-2 px-3 rounded">Accueil</a>
+        <a href="mission.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Missions</a>
+        <a href="projets.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Projets</a>
+        <a href="actions.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Actions</a>
+        <a href="partenaires.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Partenaires</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Contact</a>
+      </div>
+    </nav>
   </div>
 </header>
 
@@ -183,18 +198,6 @@
   </div>
         
         <!-- Navigation -->
-        <nav class="bg-blue-900 text-white">
-            <div class="container mx-auto px-4">
-                <ul id="navMenu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 py-3">
-                    <li><a href="index.html" class="nav-link block py-2 hover:text-yellow-400 transition">Accueil</a></li>
-                    <li><a href="mission.html" class="nav-link block py-2 hover:text-yellow-400 transition">Nos Missions</a></li>
-                    <li><a href="projets.html" class="nav-link block py-2 hover:text-yellow-400 transition">Projets</a></li>
-                    <li><a href="actions.html" class="nav-link block py-2 hover:text-yellow-400 transition">Nos Actions</a></li>
-                    <li><a href="partenaires.html" class="nav-link active block py-2 text-yellow-400 transition">Partenaires</a></li>
-                    <li><a href="contact.html" class="nav-link block py-2 hover:text-yellow-400 transition">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -297,7 +300,7 @@ Les partenariats reposent sur la complémentarité des compétences, la transpar
                         <a href="https://www.linkedin.com/company/green-elysium" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/green_elysium_international/" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
+                        <a href="cc" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -305,14 +308,11 @@ Les partenariats reposent sur la complémentarité des compétences, la transpar
                 
                 <div class="bg-white text-blue-900 rounded-lg p-6">
     <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
-    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation" novalidate>
-        <!-- ✅ URL de VOTRE page de remerciement -->
-        <input type="hidden" name="_next" value="https://votre-site.com/merci.html" />
+    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation">
+        <input type="hidden" name="_next" value="https://www.greenelysium.org/merci.html" />
         
-        <!-- ✅ Message automatique - nécessite _replyto ci-dessous -->
         <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
         
-        <!-- ✅ Sujet de l'email que vous recevrez -->
         <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
         
         <!-- ✅ Piège anti-spam - le cacher avec CSS -->
@@ -321,7 +321,6 @@ Les partenariats reposent sur la complémentarité des compétences, la transpar
         <div class="grid md:grid-cols-2 gap-4 mb-4">
             <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
             
-            <!-- ✅ CRITIQUE : Utilisez _replyto (avec underscore) -->
             <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
         </div>
         
@@ -464,3 +463,6 @@ Les partenariats reposent sur la complémentarité des compétences, la transpar
     </script>
 </body>
 </html>
+
+
+
