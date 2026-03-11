@@ -1,651 +1,347 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Nos Missions – Agriculture Durable & Régénération des Sols | GREEN ELYSIUM</title>
-    <meta name="description" content="Découvrez les 4 axes d'intervention de Green Elysium : agriculture durable, formation des agriculteurs, projets pilotes de biochar et autonomie des communautés rurales en France et Thaïlande.">
-    <meta name="keywords" content="missions green elysium, agriculture durable, biochar, régénération des sols, formation agriculteurs, projets pilotes, environnement">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.greenelysium.org/mission.html">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nos Missions – Agriculture Durable & Biochar | GREEN ELYSIUM">
-    <meta property="og:description" content="4 axes d'intervention : agriculture durable, formation des agriculteurs, projets pilotes et autonomie des communautés. Green Elysium agit pour l'environnement.">
-    <meta property="og:image" content="https://www.greenelysium.org/assets/Mission.png">
-    <meta property="og:url" content="https://www.greenelysium.org/mission.html">
-    <meta property="og:site_name" content="GREEN ELYSIUM">
-    <meta property="og:locale" content="fr_FR">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nos Missions – Agriculture Durable & Biochar | GREEN ELYSIUM">
-    <meta name="twitter:description" content="4 axes d'intervention : agriculture durable, formation des agriculteurs, projets pilotes et autonomie des communautés.">
-    <meta name="twitter:image" content="https://www.greenelysium.org/assets/Mission.png">
-    <!-- JSON-LD WebPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Nos Missions – GREEN ELYSIUM",
-      "url": "https://www.greenelysium.org/mission.html",
-      "description": "Découvrez les 4 axes d'intervention de Green Elysium : agriculture durable, formation des agriculteurs, projets pilotes de biochar et autonomie des communautés rurales.",
-      "inLanguage": "fr",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "GREEN ELYSIUM",
-        "url": "https://www.greenelysium.org"
-      }
-    }
-    </script>
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
-        }
-        
-        h1, h2, h3 {
-            font-family: 'Roboto Slab', serif;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
-        }
-        
-        .section-gradient {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-        
-        .flag-icon {
-            width: 30px;
-            height: 20px;
-            border-radius: 2px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #fbbf24;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .progress-bar {
-            animation: progressAnimation 2s ease-out;
-        }
-        
-        @keyframes progressAnimation {
-            from { width: 0; }
-        }
-        
-        .icon-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .breadcrumb-separator::after {
-            content: '/';
-            margin: 0 0.5rem;
-            color: rgba(255,255,255,0.5);
-        }
-        
-        .objective-item {
-            position: relative;
-            padding-left: 2rem;
-        }
-        
-        .objective-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            background: #22c55e;
-            border-radius: 50%;
-        }
-        
-        .methodology-step {
-            position: relative;
-        }
-        
-        .methodology-step::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: -2rem;
-            width: 4rem;
-            height: 2px;
-            background: linear-gradient(to right, #2a5298, transparent);
-        }
-        
-        .methodology-step:last-child::after {
-            display: none;
-        }
-        
-        @media (max-width: 768px) {
-            .methodology-step::after {
-                display: none;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Notre Mission – GREEN ELYSIUM</title>
+  <meta name="description" content="Découvrez la mission de Green Elysium : protection de la biodiversité, biochar, éducation écologique et coopération internationale France-Asie.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.greenelysium.org/mission.html">
+  <meta property="og:title" content="Notre Mission – GREEN ELYSIUM">
+  <meta property="og:image" content="https://www.greenelysium.org/assets/Logo.jpg">
+  <meta property="og:url" content="https://www.greenelysium.org/mission.html">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--g900:#1b3a2d;--g700:#2d6a4f;--g500:#52b788;--sage:#7c9a7e;--earth:#a0522d;--earth-dk:#6b3521;--gold:#c8963e;--gold-lt:#e8b96b;--cream:#faf7f2;--warm:#f0ebe1;--text:#1c2b1e;--muted:#5a7060;--shadow-sm:0 2px 12px rgba(27,58,45,.07);--shadow-lg:0 20px 60px rgba(27,58,45,.18);--r:18px;--tr:all .3s cubic-bezier(.4,0,.2,1);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);line-height:1.65;}
+    h1,h2{font-family:'Playfair Display',serif;}h3,h4{font-family:'DM Sans',sans-serif;font-weight:700;}
+    #site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 2rem;transition:var(--tr);}
+    #site-header.scrolled{background:rgba(27,58,45,.97);backdrop-filter:blur(16px);padding:.875rem 2rem;box-shadow:0 4px 32px rgba(0,0,0,.2);}
+    .nav-logo{font-family:'Playfair Display',serif;font-weight:800;color:#fff;font-size:1.1rem;text-decoration:none;display:flex;align-items:center;gap:.625rem;}
+    .nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-weight:500;font-size:.875rem;padding:.375rem .75rem;border-radius:6px;transition:color .2s;}
+    .nav-link:hover,.nav-link.active{color:var(--gold-lt);}
+    @media(max-width:768px){#navMenu{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(27,58,45,.98);padding:1.5rem 2rem;gap:.25rem;backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.1);}#navMenu.open{display:flex;}.hbtn{display:flex!important;}}
+    @media(min-width:769px){#navMenu{display:flex!important;flex-direction:row;align-items:center;gap:.25rem;}.hbtn{display:none!important;}}
+    .hero{min-height:100vh;background:linear-gradient(160deg,#0f2218 0%,var(--g700) 55%,#3d8b6b 100%);position:relative;overflow:hidden;display:flex;align-items:center;}
+    .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.18;pointer-events:none;}
+    .b1{width:700px;height:700px;background:var(--sage);top:-200px;right:-150px;animation:flt 9s ease-in-out infinite;}
+    .b2{width:500px;height:500px;background:var(--earth);bottom:-150px;left:-100px;animation:flt 11s ease-in-out infinite reverse;}
+    @keyframes flt{0%,100%{transform:translateY(0);}50%{transform:translateY(-22px);}}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--gold-lt);padding:.375rem 1rem;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+    .ha1{animation:su .8s ease both;}.ha2{animation:su .8s .18s ease both;}.ha3{animation:su .8s .36s ease both;}.ha4{animation:su .8s .54s ease both;}
+    @keyframes su{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:none;}}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.875rem;border-radius:100px;font-weight:600;font-size:.875rem;text-decoration:none;transition:var(--tr);cursor:pointer;border:none;}
+    .btn-gold{background:var(--gold);color:var(--g900);}.btn-gold:hover{background:#d4a04a;transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,150,62,.45);}
+    .btn-owh{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}.btn-owh:hover{border-color:#fff;background:rgba(255,255,255,.1);transform:translateY(-2px);}
+    .btn-green{background:var(--g700);color:#fff;}.btn-green:hover{background:var(--g900);transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,106,79,.4);}
+    .stag{display:inline-block;color:var(--earth);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.625rem;}
+    .stitle{font-size:clamp(1.75rem,3.5vw,2.75rem);line-height:1.2;}.stitle .ac{color:var(--g700);}
+    .dline{width:48px;height:3px;background:var(--gold);border-radius:2px;}
+    .card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow-sm);transition:var(--tr);overflow:hidden;}
+    .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+    .cicon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+    .ig{background:rgba(45,106,79,.1);color:var(--g700);}.ie{background:rgba(160,82,45,.1);color:var(--earth);}.is{background:rgba(124,154,126,.15);color:#5d7a5f;}.igo{background:rgba(200,150,62,.12);color:var(--earth);}
+    .rv,.rvl,.rvr{opacity:0;transition:opacity .65s ease,transform .65s ease;}
+    .rv{transform:translateY(32px);}.rvl{transform:translateX(-32px);}.rvr{transform:translateX(32px);}
+    .rv.on,.rvl.on,.rvr.on{opacity:1;transform:none;}
+    .mblock{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding:4rem 0;border-bottom:1px solid var(--warm);}
+    .mblock:last-of-type{border-bottom:none;}
+    @media(max-width:768px){.mblock{grid-template-columns:1fr;gap:2rem;padding:2.5rem 0;}.mblock.rev>*:first-child{order:2;}.mblock.rev>*:last-child{order:1;}}
+    .micon{width:120px;height:120px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:1.25rem;}
+    .olist{list-style:none;margin-top:1rem;display:flex;flex-direction:column;gap:.625rem;}
+    .olist li{display:flex;align-items:flex-start;gap:.75rem;font-size:.875rem;color:var(--muted);}
+    .olist li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:.42rem;}
+    .vcard{border-radius:var(--r);padding:2.5rem;color:#fff;position:relative;overflow:hidden;}
+    .vcard::before{content:'';position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.06);}
+    footer{background:var(--g900);color:rgba(255,255,255,.75);}
+    .ftitle{font-family:'Playfair Display',serif;color:#fff;font-size:1rem;margin-bottom:1.125rem;font-weight:700;}
+    .flink{display:block;color:rgba(255,255,255,.5);text-decoration:none;font-size:.85rem;margin-bottom:.625rem;transition:color .2s;}.flink:hover{color:var(--gold-lt);}
+    .soc{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);transition:var(--tr);text-decoration:none;font-size:.95rem;}.soc:hover{background:var(--gold);color:var(--g900);transform:translateY(-3px);}
+  </style>
 </head>
 <body>
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto px-6">
-    <div class="flex items-center justify-between py-3">
-      <a href="index.html" class="flex items-center space-x-3">
-        <img src="assets/Logo.jpg" alt="Logo GREEN ELYSIUM" class="h-14 w-auto" loading="lazy">
-        <div>
-          <h1 class="text-lg font-bold text-blue-900 leading-tight">GREEN ELYSIUM</h1>
-          <p class="text-xs text-gray-500">Association agréée • Protection Environnementale</p>
-        </div>
+  <header id="site-header">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/Logo.jpg" alt="Green Elysium" class="w-9 h-9 rounded-full object-cover" style="border:2px solid rgba(255,255,255,.2);">
+        GREEN ELYSIUM
       </a>
-      <nav class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Accueil</a>
-        <a href="mission.html" class="nav-link text-yellow-400 font-semibold font-medium text-sm transition">Nos Missions</a>
-        <a href="projets.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Projets</a>
-        <a href="actions.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Actions</a>
-        <a href="partenaires.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Partenaires</a>
-        <a href="contact.html" class="bg-blue-900 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-blue-800 transition">Contact</a>
-      </nav>
-      <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()" aria-label="Ouvrir le menu de navigation">
-        <i class="fas fa-bars"></i>
+      <button class="hbtn text-white p-2 rounded-lg hover:bg-white/10 transition-colors" onclick="toggleMenu()" aria-label="Menu">
+        <i class="fas fa-bars text-xl"></i>
       </button>
-    </div>
-    <nav id="navMenu" class="hidden md:hidden pb-3">
-      <div class="flex flex-col space-y-2">
-        <a href="index.html" class="text-yellow-500 font-semibold py-2 px-3 rounded">Accueil</a>
-        <a href="mission.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Missions</a>
-        <a href="projets.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Projets</a>
-        <a href="actions.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Actions</a>
-        <a href="partenaires.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Partenaires</a>
-        <a href="contact.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Contact</a>
+      <div id="navMenu">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="mission.html" class="nav-link active">Mission</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="actions.html" class="nav-link">Actions</a>
+        <a href="partenaires.html" class="nav-link">Partenaires</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html#don" class="btn btn-gold ml-3 py-2 px-4 text-sm"><i class="fas fa-heart"></i> Soutenir</a>
       </div>
     </nav>
-  </div>
-</header>
-        <!-- Bouton menu visible uniquement sur mobile -->
-        <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="absolute inset-0" style="background-image:radial-gradient(circle at 80% 20%,rgba(124,154,126,.15) 0%,transparent 50%);"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full" style="padding-top:8rem;padding-bottom:5rem;">
+        <div class="max-w-2xl">
+          <div class="mb-4 ha1">
+            <a href="index.html" style="color:rgba(255,255,255,.5);font-size:.8rem;text-decoration:none;">Accueil</a>
+            <span style="color:rgba(255,255,255,.3);margin:0 .5rem;">/</span>
+            <span style="color:var(--gold-lt);font-size:.8rem;">Mission</span>
+          </div>
+          <div class="hero-badge mb-6 ha1"><i class="fas fa-globe-asia"></i> Active en 2 pays</div>
+          <h1 style="font-size:clamp(2.75rem,6vw,5rem);color:#fff;line-height:1.08;font-weight:800;" class="mb-6 ha2">
+            Notre <span style="color:var(--gold-lt);">mission</span><br>pour la planète
+          </h1>
+          <p style="color:rgba(255,255,255,.68);font-size:clamp(1rem,2vw,1.15rem);max-width:560px;font-weight:300;" class="mb-10 ha3">Protéger la biodiversité, régénérer les sols et éduquer les générations futures — les trois piliers qui guident chacune de nos actions.</p>
+          <div class="flex flex-wrap gap-4 ha4">
+            <a href="#vision" class="btn btn-gold"><i class="fas fa-compass"></i> Notre vision</a>
+            <a href="contact.html" class="btn btn-owh"><i class="fas fa-envelope"></i> Nous rejoindre</a>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <!-- Wave -->
+    <div style="background:linear-gradient(160deg,#0f2218 0%,var(--g700) 55%,#3d8b6b 100%);line-height:0;">
+      <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:90px;"><path d="M0,45 C360,90 1080,0 1440,45 L1440,90 L0,90 Z" fill="#faf7f2"/></svg>
     </div>
-  </div>
-        
-        <!-- Navigation -->
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20">
-        <div class="container mx-auto px-4">
-            <!-- Breadcrumb -->
-            <div class="flex items-center text-sm mb-8 text-blue-200">
-                <a href="index.html" class="hover:text-white breadcrumb-separator">Accueil</a>
-                <span class="text-yellow-400">Nos Missions</span>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="fade-in">
-                    <span class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-6">
-                        <i class="fas fa-bullseye mr-2"></i>Notre Engagement
-                    </span>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Nos Missions pour un Avenir Durable</h2>
-                    <p class="text-lg text-blue-100 mb-8">
-                        La mission de Green Elysium est de répondre à des problématiques environnementales concrètes par des actions opérationnelles, combinant mise en œuvre terrain, encadrement scientifique et résultats mesurables.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center bg-white/10 backdrop-blur px-4 py-2 rounded-lg">
-                            <i class="fas fa-check-circle text-yellow-400 mr-2"></i>
-                            <span>4 Axes d'intervention</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="assets/Mission.png" alt="Illustration des missions environnementales de Green Elysium : agriculture durable et biochar" class="rounded-lg shadow-2xl" loading="lazy">
-                    <div class="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-lg shadow-xl">
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-globe-asia text-4xl icon-float"></i>
-                            <div>
-                                <p class="text-2xl font-bold">2 Pays</p>
-                                <p class="text-sm opacity-90">d'intervention</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- VISION / MISSION -->
+    <section id="vision" class="py-20" style="background:var(--cream);">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 rv">
+          <span class="stag">Qui sommes-nous</span>
+          <h2 class="stitle">Vision &amp; <span class="ac">Mission</span></h2>
+          <div class="dline mx-auto mt-4"></div>
         </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="vcard rvl" style="background:linear-gradient(135deg,var(--g700) 0%,var(--g900) 100%);">
+            <div class="cicon mb-4" style="background:rgba(255,255,255,.12);color:#fff;width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-eye"></i></div>
+            <h3 class="text-xl mb-3" style="color:#fff;">Notre Vision</h3>
+            <p style="color:rgba(255,255,255,.75);font-size:.9rem;line-height:1.8;">Un monde où les écosystèmes naturels sont préservés et régénérés, où les communautés locales — en France comme en Asie — disposent des connaissances et des outils pour vivre en harmonie avec leur environnement.</p>
+          </div>
+          <div class="vcard rvr" style="background:linear-gradient(135deg,var(--earth) 0%,var(--earth-dk) 100%);">
+            <div class="cicon mb-4" style="background:rgba(255,255,255,.12);color:#fff;width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-bullseye"></i></div>
+            <h3 class="text-xl mb-3" style="color:#fff;">Notre Mission</h3>
+            <p style="color:rgba(255,255,255,.75);font-size:.9rem;line-height:1.8;">Mobiliser citoyens, entreprises et institutions pour agir en faveur de la biodiversité, des sols et du climat — grâce à des solutions innovantes comme le biochar et des programmes d'éducation environnementale.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Mission Overview -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Notre Vision & Notre Mission</h2>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-yellow-500 p-4 rounded-full mr-4">
-                            <i class="fas fa-eye text-blue-900 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Notre Vision</h3>
-                    </div>
-                    <p class="text-blue-100 leading-relaxed">
-                        Nous croyons à une transition environnementale fondée sur des solutions concrètes, mesurables et économiquement viables.
-Notre vision est de créer une nouvelle économie rurale, fondée sur la valorisation des ressources existantes et la restauration des écosystèmes.
-Nous plaçons la preuve scientifique, la traçabilité et la transparence au cœur de chaque action.
-Cette approche vise à réconcilier performance environnementale, autonomie agricole et crédibilité institutionnelle.
-                    </p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-green-600 to-green-500 text-white p-8 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-white p-4 rounded-full mr-4">
-                            <i class="fas fa-bullseye text-green-600 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Notre Mission</h3>
-                    </div>
-                    <p class="text-green-100 leading-relaxed">
-                        La mission de Green Elysium est de répondre à des problématiques environnementales concrètes par des actions opérationnelles, combinant mise en œuvre terrain, encadrement scientifique et résultats mesurables.
-                    </p>
-                </div>
-            </div>
+    <!-- Wave -->
+    <div style="background:var(--cream);line-height:0;">
+      <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:70px;"><path d="M0,0 C480,70 960,0 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/></svg>
+    </div>
+
+    <!-- 4 PILIERS -->
+    <section class="py-16" style="background:#fff;">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 rv">
+          <span class="stag">Nos axes d'action</span>
+          <h2 class="stitle">4 piliers pour un impact <span class="ac">durable</span></h2>
+          <div class="dline mx-auto mt-4"></div>
         </div>
+
+        <div class="mblock">
+          <div class="rvl">
+            <div class="micon" style="background:rgba(45,106,79,.1);"><i class="fas fa-seedling" style="color:var(--g700);"></i></div>
+            <span class="stag">Pilier 1</span>
+            <h3 class="text-2xl mb-3">Protection de la Biodiversité</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.8;">Nous agissons pour préserver les espèces et habitats naturels menacés, en France et en Asie. Chaque écosystème préservé contribue à l'équilibre climatique mondial.</p>
+            <ul class="olist">
+              <li>Recensement et protection des espèces locales menacées</li>
+              <li>Restauration d'habitats naturels dégradés</li>
+              <li>Plaidoyer pour des politiques environnementales ambitieuses</li>
+            </ul>
+          </div>
+          <div class="rvr">
+            <div class="card p-7" style="background:linear-gradient(135deg,rgba(45,106,79,.05) 0%,rgba(124,154,126,.1) 100%);box-shadow:none;">
+              <div class="grid grid-cols-2 gap-3 mb-3">
+                <div class="text-center p-4 rounded-xl" style="background:#fff;">
+                  <div style="font-family:'Playfair Display',serif;font-size:2.25rem;font-weight:800;color:var(--g700);">2</div>
+                  <div style="font-size:.73rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;">Pays ciblés</div>
+                </div>
+                <div class="text-center p-4 rounded-xl" style="background:#fff;">
+                  <div style="font-family:'Playfair Display',serif;font-size:2.25rem;font-weight:800;color:var(--sage);">2</div>
+                  <div style="font-size:.73rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;">Continents</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl" style="background:#fff;">
+                <p style="font-size:.85rem;color:var(--muted);font-style:italic;line-height:1.7;">"La biodiversité n'est pas un luxe, c'est le fondement de toute vie sur Terre."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mblock rev">
+          <div class="rvr">
+            <div class="card p-7" style="background:linear-gradient(135deg,rgba(160,82,45,.06) 0%,rgba(107,53,33,.08) 100%);box-shadow:none;">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3 p-4 rounded-xl" style="background:#fff;">
+                  <div class="cicon ie"><i class="fas fa-thermometer-half"></i></div>
+                  <div><div style="font-weight:700;font-size:.875rem;">Pyrolyse 450–700°C</div><div style="font-size:.8rem;color:var(--muted);">Transformation des résidus organiques</div></div>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-xl" style="background:#fff;">
+                  <div class="cicon ig"><i class="fas fa-leaf"></i></div>
+                  <div><div style="font-weight:700;font-size:.875rem;">Amélioration des sols</div><div style="font-size:.8rem;color:var(--muted);">Fertilité et rétention d'eau accrues</div></div>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-xl" style="background:#fff;">
+                  <div class="cicon igo"><i class="fas fa-cloud"></i></div>
+                  <div><div style="font-weight:700;font-size:.875rem;">Séquestration carbone</div><div style="font-size:.8rem;color:var(--muted);">Stabilité millénaire dans les sols</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rvl">
+            <div class="micon" style="background:rgba(160,82,45,.1);"><i class="fas fa-fire" style="color:var(--earth);"></i></div>
+            <span class="stag">Pilier 2</span>
+            <h3 class="text-2xl mb-3">Biochar &amp; Régénération des Sols</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.8;">Le biochar est notre solution phare : issu de la pyrolyse de déchets organiques, il améliore la structure des sols, séquestre durablement le carbone et restaure la vie microbienne des terres appauvries.</p>
+            <ul class="olist">
+              <li>Production à partir de résidus agricoles locaux</li>
+              <li>Déploiement franco-asiatique du projet pilote</li>
+              <li>Séquestration mesurable du CO₂ atmosphérique</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mblock">
+          <div class="rvl">
+            <div class="micon" style="background:rgba(124,154,126,.15);"><i class="fas fa-graduation-cap" style="color:#5d7a5f;"></i></div>
+            <span class="stag">Pilier 3</span>
+            <h3 class="text-2xl mb-3">Éducation &amp; Sensibilisation</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.8;">Changer les comportements passe par l'éducation. Nous développons des programmes adaptés aux jeunes et communautés pour créer une culture de la responsabilité environnementale.</p>
+            <ul class="olist">
+              <li>Ateliers dans les écoles et universités</li>
+              <li>Campagnes de sensibilisation communautaires</li>
+              <li>Formation des acteurs locaux en Asie</li>
+            </ul>
+          </div>
+          <div class="rvr">
+            <div class="card p-7" style="background:linear-gradient(135deg,rgba(124,154,126,.08) 0%,rgba(93,122,95,.06) 100%);box-shadow:none;">
+              <div class="text-center mb-4">
+                <div style="font-family:'Playfair Display',serif;font-size:5rem;font-weight:800;color:var(--sage);line-height:1;">∞</div>
+                <div style="font-size:.85rem;color:var(--muted);">Générations à former</div>
+              </div>
+              <div class="p-4 rounded-xl" style="background:#fff;">
+                <p style="font-size:.85rem;color:var(--muted);line-height:1.7;">Chaque enfant sensibilisé devient un ambassadeur pour sa communauté. L'éducation est notre investissement multigénérationnel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mblock rev">
+          <div class="rvr">
+            <div class="card p-7" style="background:linear-gradient(135deg,rgba(200,150,62,.08) 0%,rgba(160,82,45,.06) 100%);box-shadow:none;">
+              <div class="grid grid-cols-2 gap-3 mb-3">
+                <div class="text-center p-4 rounded-xl" style="background:#fff;border-bottom:3px solid var(--g700);">
+                  <div class="text-2xl mb-1">🇫🇷</div>
+                  <div style="font-weight:700;font-size:.875rem;">France</div>
+                  <div style="font-size:.73rem;color:var(--muted);">Siège social</div>
+                </div>
+                <div class="text-center p-4 rounded-xl" style="background:#fff;border-bottom:3px solid var(--earth);">
+                  <div class="text-2xl mb-1">🌏</div>
+                  <div style="font-weight:700;font-size:.875rem;">Asie</div>
+                  <div style="font-size:.73rem;color:var(--muted);">Projet pilote</div>
+                </div>
+              </div>
+              <div class="p-3 rounded-xl flex items-center gap-3" style="background:#fff;">
+                <i class="fas fa-link" style="color:var(--gold);"></i>
+                <span style="font-size:.85rem;color:var(--muted);">Un pont entre deux continents pour un avenir commun</span>
+              </div>
+            </div>
+          </div>
+          <div class="rvl">
+            <div class="micon" style="background:rgba(200,150,62,.12);"><i class="fas fa-handshake" style="color:var(--earth);"></i></div>
+            <span class="stag">Pilier 4</span>
+            <h3 class="text-2xl mb-3">Coopération Internationale</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.8;">Les défis environnementaux sont globaux. Notre ancrage franco-asiatique nous permet de créer des ponts entre le Nord et le Sud, en partageant expertise, ressources et vision commune.</p>
+            <ul class="olist">
+              <li>Recherche de partenariats avec ONG asiatiques et européennes</li>
+              <li>Échanges de compétences et de bonnes pratiques</li>
+              <li>Projets à impact local et réplication internationale</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Main Missions Section -->
-    <section class="py-16 section-gradient">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nos 4 Axes d'Intervention</h2>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-                    Des actions concrètes et mesurables pour créer un impact durable sur l'environnement et les communautés
-                </p>
-            </div>
-            
-            <!-- Mission 1: régénération -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
-                <div class="grid md:grid-cols-2">
-                    <div class="relative h-64 md:h-auto">
-                        <img src="assets/ecolo.png" alt="Agriculture durable et régénération des sols – Mission 1 de Green Elysium" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-full font-semibold">
-                            <i class="fas fa-tree mr-2"></i>Mission 1
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-seedling text-green-600 text-2xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-blue-900">Agriculture durable et régénération des sols</h3>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            Nous développons et promouvins des pratiques agricoles durables visant à améliorer la qualité des sols et la résilience des systemes agricoles, notamment par l'intégration du biochar et d'approches respectueuses des écosystèmes locaux.
-                        </p>
-                        
-                        <div class="space-y-3 mb-6">
-                            <div class="objective-item">
-                                <p class="text-gray-700">Améliorer la fertilité et la structure des sols agricoles.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Réduire la dégradation et l'érosion des terres.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Encourager des pratiques agricoles durables adaptées aus contextes locaux.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mission 2: Education -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
-                <div class="grid md:grid-cols-2">
-                    <div class="p-8 order-2 md:order-1">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-graduation-cap text-blue-600 text-2xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-blue-900">Formation et accompagnement des agriculteurs.</h3>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            Nous accompgnons les agriculteurs et acteurs locaux par des formations pratiques et un suivi de terrain afin de faciliter l'adoption de pratiques agricoles durables et autonomes.
-                        </p>
-                        
-                        <div class="space-y-3 mb-6">
-                            <div class="objective-item">
-                                <p class="text-gray-700">Transmettre des compétences techniques liées à l'agriculture durable.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Former à l'utilisation du biochar et à la gestion raisonnée de l'eau.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Renforcer l'autonomie  et la capacité d'adaptation des agriculteurs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative h-64 md:h-auto order-1 md:order-2">
-                        <img src="https://picsum.photos/seed/education-env/800/600" alt="Formation pratique des agriculteurs aux techniques d'agriculture durable – Mission 2" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
-                            <i class="fas fa-book mr-2"></i>Mission 2
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mission 3: Renewable Energy -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
-                <div class="grid md:grid-cols-2">
-                    <div class="relative h-64 md:h-auto">
-                        <img src="https://picsum.photos/seed/sustainable-farm/800/600" alt="Projets pilotes d'agriculture durable et actions de terrain – Mission 3" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-4 py-2 rounded-full font-semibold">
-                            <i class="fas fa-sun mr-2"></i>Mission 3
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-rocket text-orange-500 text-4xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-blue-900">Projets pilotes et actions de terrain</h3>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            Nous mettons en place des projets pilotes en collaboration avec des paretenaires locaux afin de tester, adapter et ameliorer les solutions agricoles en conditions réelles.
-                        </p>
-                        
-                        <div class="space-y-3 mb-6">
-                            <div class="objective-item">
-                                <p class="text-gray-700">Déployer des projets pilotes adaptés aux réalités locales.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Tester et ajuster les pratiques agricoles sur le terrain</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Capitaliser les enseignements pour la reproduction des projets.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mission 4: Water Protection -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8 card-hover">
-                <div class="grid md:grid-cols-2">
-                    <div class="p-8 order-2 md:order-1">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-earth-americas text-teal-600 text-4xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-blue-900">Autonomie des communautés et impact environnemental</h3>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            Nous Œuvronspour renforcer l'autonomie des communautés agricoles tout en contribuant à la protection de l'environnement à travers des solutions durables et reproductibles.
-                        </p>
-                        
-                        <div class="space-y-3 mb-6">
-                            <div class="objective-item">
-                                <p class="text-gray-700">Favoriser l'autonomie à long terme des communautés locales.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Réduire l'impact environnemental des pratiques agricoles.</p>
-                            </div>
-                            <div class="objective-item">
-                                <p class="text-gray-700">Contribuer à des systemes agricoles plus résilients face au changement climatique.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative h-64 md:h-auto order-1 md:order-2">
-                        <img src="https://picsum.photos/seed/water-protection/800/600" alt="Autonomie des communautés agricoles et protection de l'environnement – Mission 4" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 right-4 bg-cyan-600 text-white px-4 py-2 rounded-full font-semibold">
-                            <i class="fas fa-tint mr-2"></i>Mission 4
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- CTA -->
+    <section class="py-20" style="background:linear-gradient(135deg,var(--earth-dk) 0%,var(--earth) 100%);">
+      <div class="max-w-4xl mx-auto px-6 text-center rv">
+        <span class="stag" style="color:rgba(255,255,255,.55);">Rejoignez-nous</span>
+        <h2 class="stitle mb-4" style="color:#fff;">Agissez avec <span style="color:var(--gold-lt);">nous</span></h2>
+        <p class="mb-8 max-w-xl mx-auto" style="color:rgba(255,255,255,.68);font-size:.95rem;">Bénévole, partenaire ou donateur — chaque engagement accélère notre impact collectif.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="contact.html" class="btn btn-gold"><i class="fas fa-envelope"></i> Nous contacter</a>
+          <a href="index.html#don" class="btn btn-owh"><i class="fas fa-heart"></i> Faire un don</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-blue-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
-                    <p class="text-blue-200 mb-8">
-                        Rejoignez notre mission pour un environnement plus propre et durable. 
-                        Votre soutien compte !
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-yellow-400 w-6"></i>
-                            <span class="ml-4">contact@greenelysium4.org</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-yellow-400 w-6"></i>
-                            <span class="ml-4">Lun-Ven : 9h00-18h00</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex space-x-4 mt-8">
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/green-elysium" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur LinkedIn" rel="noopener noreferrer" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/green_elysium_international/" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition" aria-label="Suivez Green Elysium sur Instagram" rel="noopener noreferrer" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-white text-blue-900 rounded-lg p-6">
-    <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
-    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation">
-        <input type="hidden" name="_next" value="https://www.greenelysium.org/merci.html" />
-        
-        <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
-        
-        <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
-        
-        <!-- ✅ Piège anti-spam - le cacher avec CSS -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-
-        <div class="grid md:grid-cols-2 gap-4 mb-4">
-            <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
-            
-            <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
+  <footer class="pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/Logo.jpg" alt="Green Elysium" class="w-12 h-12 rounded-full object-cover" style="border:2px solid rgba(255,255,255,.15);">
+            <span class="ftitle text-xl">GREEN ELYSIUM</span>
+          </div>
+          <p style="color:rgba(255,255,255,.45);font-size:.85rem;line-height:1.8;max-width:300px;" class="mb-5">Association agréée pour la protection de l'environnement. Active en France et en Asie depuis 2026.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/GreenElysiumInternational" class="soc" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/green_elysium_international/" class="soc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/green-elysium" class="soc" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-        
-        <input type="text" name="subject" placeholder="Sujet" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500">
-        
-        <textarea name="message" placeholder="Votre message*" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500" required></textarea>
-        
-        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 rounded-lg transition">
-            Envoyer le message
-        </button>
-    </form>
-</div>
-            </div>
+        <div>
+          <p class="ftitle">Navigation</p>
+          <a href="index.html" class="flink">Accueil</a>
+          <a href="mission.html" class="flink">Notre Mission</a>
+          <a href="projets.html" class="flink">Nos Projets</a>
+          <a href="actions.html" class="flink">Nos Actions</a>
+          <a href="partenaires.html" class="flink">Partenaires</a>
+          <a href="contact.html" class="flink">Contact</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <a href="index.html" class="flex items-center space-x-3 mb-4">
-                        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-10 w-auto">
-                        <span class="font-bold">GREEN ELYSIUM</span>
-                    </a>
-                    <p class="text-gray-400 text-sm">
-                        Association française dédiée à la protection environnementales.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Navigation</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-white transition">Accueil</a></li>
-                        <li><a href="missions.html" class="hover:text-white transition">Missions</a></li>
-                        <li><a href="index.html#projets" class="hover:text-white transition">Projets</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Documents</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="CR-ListeDirigeant.pdf" class="hover:text-white transition">Statuts</a></li>
-                        <li><a href="Mention Légal.txt" class="hover:text-white transition">Mentions légales</a></li>
-                        <li><a href="Politique de confidentialité.txt" class="hover:text-white transition">Politique de confidentialité</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2026 GREEN ELYSIUM. Tous droits réservés. | Agrément N° W173011218</p>
-            </div>
+        <div>
+          <p class="ftitle">Contact</p>
+          <a href="mailto:contact@greenelysium.org" class="flink"><i class="fas fa-envelope mr-2" style="opacity:.5;"></i>contact@greenelysium.org</a>
+          <span class="flink"><i class="fas fa-map-marker-alt mr-2" style="opacity:.5;"></i>France &amp; Asie</span>
+          <span class="flink"><i class="fas fa-clock mr-2" style="opacity:.5;"></i>Lun–Ven · 9h–18h</span>
+          <a href="index.html#don" class="btn btn-gold mt-4 py-2 px-4 text-xs"><i class="fas fa-heart"></i> Faire un don</a>
         </div>
-    </footer>
+      </div>
+      <hr style="border-color:rgba(255,255,255,.08);margin:0 0 1.5rem;">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-3" style="font-size:.75rem;color:rgba(255,255,255,.3);">
+        <p>© 2026 Green Elysium International · Association loi 1901</p>
+        <p>Fait avec <i class="fas fa-heart" style="color:#ef4444;"></i> pour la planète</p>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        // Toggle mobile menu
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-        }
-        
-        // Handle form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            alert('Message envoyé avec succès! Nous vous répondrons dans les plus brefs délais.');
-            event.target.reset();
-        }
-        
-        // Handle newsletter subscription
-        function handleNewsletter(event) {
-            event.preventDefault();
-            alert('Inscription à la newsletter réussie! Merci de votre intérêt.');
-            event.target.reset();
-        }
-        
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-        
-        // Observe elements
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-        
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-        
-        // Add shadow on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-xl');
-            } else {
-                header.classList.remove('shadow-xl');
-            }
-        });
-        
-        // Animate counters when in view
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'scale(1)';
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        document.querySelectorAll('.text-4xl.font-bold').forEach(counter => {
-            counter.style.opacity = '0';
-            counter.style.transform = 'scale(0.8)';
-            counter.style.transition = 'all 0.5s ease-out';
-            counterObserver.observe(counter);
-        });
-    </script>
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 60));
+    function toggleMenu() { document.getElementById('navMenu').classList.toggle('open'); }
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.rv,.rvl,.rvr').forEach(el => ro.observe(el));
+  </script>
 </body>
 </html>
-
-
-

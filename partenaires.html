@@ -1,468 +1,355 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <title>Nos Partenaires - GREEN ELYSIUM</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
-        }
-        
-        h1, h2, h3 {
-            font-family: 'Roboto Slab', serif;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
-        }
-        
-        .section-gradient {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-        
-        .flag-icon {
-            width: 30px;
-            height: 20px;
-            border-radius: 2px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #fbbf24;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .icon-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .breadcrumb-separator::after {
-            content: '/';
-            margin: 0 0.5rem;
-            color: rgba(255,255,255,0.5);
-        }
-        
-        .partner-logo {
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s ease;
-        }
-        
-        .partner-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-        }
-        
-        .testimonial-card {
-            position: relative;
-        }
-        
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            font-size: 80px;
-            color: #fbbf24;
-            font-family: Georgia, serif;
-            line-height: 1;
-            opacity: 0.3;
-        }
-        
-        .category-tab {
-            transition: all 0.3s ease;
-        }
-        
-        .category-tab.active {
-            background: #1e3a8a;
-            color: white;
-        }
-        
-        .partner-card {
-            transition: all 0.3s ease;
-        }
-        
-        .partner-card.hidden {
-            display: none;
-        }
-        
-        .benefit-icon {
-            transition: transform 0.3s ease;
-        }
-        
-        .benefit-card:hover .benefit-icon {
-            transform: scale(1.1) rotate(5deg);
-        }
-        
-        .stats-counter {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Nos Partenaires – GREEN ELYSIUM</title>
+  <meta name="description" content="Découvrez les partenaires de Green Elysium et comment rejoindre notre réseau pour agir ensemble pour l'environnement.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.greenelysium.org/partenaires.html">
+  <meta property="og:title" content="Nos Partenaires – GREEN ELYSIUM">
+  <meta property="og:image" content="https://www.greenelysium.org/assets/Logo.jpg">
+  <meta property="og:url" content="https://www.greenelysium.org/partenaires.html">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--g900:#1b3a2d;--g700:#2d6a4f;--g500:#52b788;--sage:#7c9a7e;--earth:#a0522d;--earth-dk:#6b3521;--gold:#c8963e;--gold-lt:#e8b96b;--cream:#faf7f2;--warm:#f0ebe1;--text:#1c2b1e;--muted:#5a7060;--shadow-sm:0 2px 12px rgba(27,58,45,.07);--shadow-lg:0 20px 60px rgba(27,58,45,.18);--r:18px;--tr:all .3s cubic-bezier(.4,0,.2,1);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);line-height:1.65;}
+    h1,h2{font-family:'Playfair Display',serif;}h3,h4{font-family:'DM Sans',sans-serif;font-weight:700;}
+    #site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 2rem;transition:var(--tr);}
+    #site-header.scrolled{background:rgba(27,58,45,.97);backdrop-filter:blur(16px);padding:.875rem 2rem;box-shadow:0 4px 32px rgba(0,0,0,.2);}
+    .nav-logo{font-family:'Playfair Display',serif;font-weight:800;color:#fff;font-size:1.1rem;text-decoration:none;display:flex;align-items:center;gap:.625rem;}
+    .nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-weight:500;font-size:.875rem;padding:.375rem .75rem;border-radius:6px;transition:color .2s;}
+    .nav-link:hover,.nav-link.active{color:var(--gold-lt);}
+    @media(max-width:768px){#navMenu{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(27,58,45,.98);padding:1.5rem 2rem;gap:.25rem;backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.1);}#navMenu.open{display:flex;}.hbtn{display:flex!important;}}
+    @media(min-width:769px){#navMenu{display:flex!important;flex-direction:row;align-items:center;gap:.25rem;}.hbtn{display:none!important;}}
+    .hero{min-height:100vh;background:linear-gradient(160deg,#0f2218 0%,var(--g700) 55%,#3d8b6b 100%);position:relative;overflow:hidden;display:flex;align-items:center;}
+    .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.18;pointer-events:none;}
+    .b1{width:600px;height:600px;background:var(--gold);top:-150px;right:-100px;animation:flt 9s ease-in-out infinite;}
+    .b2{width:450px;height:450px;background:var(--sage);bottom:-100px;left:-80px;animation:flt 11s ease-in-out infinite reverse;}
+    @keyframes flt{0%,100%{transform:translateY(0);}50%{transform:translateY(-22px);}}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--gold-lt);padding:.375rem 1rem;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+    .ha1{animation:su .8s ease both;}.ha2{animation:su .8s .18s ease both;}.ha3{animation:su .8s .36s ease both;}.ha4{animation:su .8s .54s ease both;}
+    @keyframes su{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:none;}}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.875rem;border-radius:100px;font-weight:600;font-size:.875rem;text-decoration:none;transition:var(--tr);cursor:pointer;border:none;}
+    .btn-gold{background:var(--gold);color:var(--g900);}.btn-gold:hover{background:#d4a04a;transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,150,62,.45);}
+    .btn-owh{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);}.btn-owh:hover{border-color:#fff;background:rgba(255,255,255,.1);transform:translateY(-2px);}
+    .btn-green{background:var(--g700);color:#fff;}.btn-green:hover{background:var(--g900);transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,106,79,.4);}
+    .stag{display:inline-block;color:var(--earth);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.625rem;}
+    .stitle{font-size:clamp(1.75rem,3.5vw,2.75rem);line-height:1.2;}.stitle .ac{color:var(--g700);}
+    .dline{width:48px;height:3px;background:var(--gold);border-radius:2px;}
+    .card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow-sm);transition:var(--tr);overflow:hidden;}
+    .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+    .cicon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+    .ig{background:rgba(45,106,79,.1);color:var(--g700);}.ie{background:rgba(160,82,45,.1);color:var(--earth);}.is{background:rgba(124,154,126,.15);color:#5d7a5f;}.igo{background:rgba(200,150,62,.12);color:var(--earth);}
+    .rv,.rvl,.rvr{opacity:0;transition:opacity .65s ease,transform .65s ease;}
+    .rv{transform:translateY(32px);}.rvl{transform:translateX(-32px);}.rvr{transform:translateX(32px);}
+    .rv.on,.rvl.on,.rvr.on{opacity:1;transform:none;}
+    /* Type cards */
+    .type-card{border-radius:var(--r);padding:2rem;border-top:4px solid;transition:var(--tr);}
+    .type-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);}
+    /* Form */
+    .form-input{width:100%;padding:.875rem 1rem;border:2px solid var(--warm);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--text);background:#fff;transition:border-color .2s;outline:none;}
+    .form-input:focus{border-color:var(--g700);}
+    .form-label{display:block;font-size:.8rem;font-weight:600;color:var(--muted);margin-bottom:.4rem;letter-spacing:.03em;text-transform:uppercase;}
+    footer{background:var(--g900);color:rgba(255,255,255,.75);}
+    .ftitle{font-family:'Playfair Display',serif;color:#fff;font-size:1rem;margin-bottom:1.125rem;font-weight:700;}
+    .flink{display:block;color:rgba(255,255,255,.5);text-decoration:none;font-size:.85rem;margin-bottom:.625rem;transition:color .2s;}.flink:hover{color:var(--gold-lt);}
+    .soc{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);transition:var(--tr);text-decoration:none;font-size:.95rem;}.soc:hover{background:var(--gold);color:var(--g900);transform:translateY(-3px);}
+  </style>
 </head>
 <body>
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto px-6">
-    <div class="flex items-center justify-between py-3">
-      <a href="index.html" class="flex items-center space-x-3">
-        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-14 w-auto">
-        <div>
-          <h1 class="text-lg font-bold text-blue-900 leading-tight">GREEN ELYSIUM</h1>
-          <p class="text-xs text-gray-500">Association agréée • Protection Environnementale</p>
-        </div>
+  <header id="site-header">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/Logo.jpg" alt="Green Elysium" class="w-9 h-9 rounded-full object-cover" style="border:2px solid rgba(255,255,255,.2);">
+        GREEN ELYSIUM
       </a>
-      <nav class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Accueil</a>
-        <a href="mission.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Missions</a>
-        <a href="projets.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Projets</a>
-        <a href="actions.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium text-sm transition">Nos Actions</a>
-        <a href="partenaires.html" class="nav-link text-yellow-400 font-semibold font-medium text-sm transition">Partenaires</a>
-        <a href="contact.html" class="bg-blue-900 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-blue-800 transition">Contact</a>
-      </nav>
-      <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+      <button class="hbtn text-white p-2 rounded-lg hover:bg-white/10 transition-colors" onclick="toggleMenu()" aria-label="Menu">
+        <i class="fas fa-bars text-xl"></i>
       </button>
-    </div>
-    <nav id="navMenu" class="hidden md:hidden pb-3">
-      <div class="flex flex-col space-y-2">
-        <a href="index.html" class="text-yellow-500 font-semibold py-2 px-3 rounded">Accueil</a>
-        <a href="mission.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Missions</a>
-        <a href="projets.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Projets</a>
-        <a href="actions.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Nos Actions</a>
-        <a href="partenaires.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Partenaires</a>
-        <a href="contact.html" class="text-gray-700 hover:text-blue-900 py-2 px-3 rounded hover:bg-gray-50">Contact</a>
+      <div id="navMenu">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="mission.html" class="nav-link">Mission</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="actions.html" class="nav-link">Actions</a>
+        <a href="partenaires.html" class="nav-link active">Partenaires</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html#don" class="btn btn-gold ml-3 py-2 px-4 text-sm"><i class="fas fa-heart"></i> Soutenir</a>
       </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-        <!-- Bouton menu visible uniquement sur mobile -->
-        <button class="md:hidden text-blue-900 text-2xl" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full" style="padding-top:8rem;padding-bottom:5rem;">
+        <div class="max-w-2xl">
+          <div class="mb-4 ha1">
+            <a href="index.html" style="color:rgba(255,255,255,.5);font-size:.8rem;text-decoration:none;">Accueil</a>
+            <span style="color:rgba(255,255,255,.3);margin:0 .5rem;">/</span>
+            <span style="color:var(--gold-lt);font-size:.8rem;">Partenaires</span>
+          </div>
+          <div class="hero-badge mb-6 ha1"><i class="fas fa-handshake"></i> Ensemble pour l'impact</div>
+          <h1 style="font-size:clamp(2.75rem,6vw,5rem);color:#fff;line-height:1.08;font-weight:800;" class="mb-6 ha2">
+            Nos <span style="color:var(--gold-lt);">partenaires</span>,<br>notre force
+          </h1>
+          <p style="color:rgba(255,255,255,.68);font-size:clamp(1rem,2vw,1.15rem);max-width:540px;font-weight:300;" class="mb-10 ha3">Ensemble, nous multiplions notre impact. Découvrez comment rejoindre notre réseau de partenaires engagés pour la cause environnementale.</p>
+          <div class="flex flex-wrap gap-4 ha4">
+            <a href="#devenir" class="btn btn-gold"><i class="fas fa-star"></i> Devenir partenaire</a>
+            <a href="#types" class="btn btn-owh"><i class="fas fa-search"></i> Types de partenariat</a>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <!-- Wave -->
+    <div style="background:linear-gradient(160deg,#0f2218 0%,var(--g700) 55%,#3d8b6b 100%);line-height:0;">
+      <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:90px;"><path d="M0,45 C360,90 1080,0 1440,45 L1440,90 L0,90 Z" fill="#faf7f2"/></svg>
     </div>
-  </div>
-        
-        <!-- Navigation -->
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20">
-        <div class="container mx-auto px-4">
-            <!-- Breadcrumb -->
-            <div class="flex items-center text-sm mb-8 text-blue-200">
-                <a href="index.html" class="hover:text-white breadcrumb-separator">Accueil</a>
-                <span class="text-yellow-400">Nos Partenaires</span>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="fade-in">
-                    <span class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-6">
-                        <i class="fas fa-handshake mr-2"></i>Ensemble pour l'Environnement
-                    </span>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Nos Partenaires</h2>
-                    <p class="text-lg text-blue-100 mb-8">
-                        Green Elysium développe ses actions en collaboration avec des partenaires académiques, techniques, agricoles et institutionnels.
-Les partenariats reposent sur la complémentarité des compétences, la transparence des objectifs et la clarté des rôles.
-                    </p>
-                </div>
-                <div class="relative">
-                    <img src="https://picsum.photos/seed/partnership/600/450" alt="Partenariat" class="rounded-lg shadow-2xl">
-                    </div>
-                </div>
-            </div>
+    <!-- POURQUOI DEVENIR PARTENAIRE -->
+    <section id="devenir" class="py-20" style="background:var(--cream);">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 rv">
+          <span class="stag">Les avantages</span>
+          <h2 class="stitle">Pourquoi devenir <span class="ac">partenaire</span> ?</h2>
+          <div class="dline mx-auto mt-4"></div>
+          <p class="mt-4 max-w-xl mx-auto" style="color:var(--muted);font-size:.95rem;">Un partenariat avec Green Elysium, c'est bien plus qu'un logo sur un site. C'est une collaboration active pour un monde meilleur.</p>
         </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="card p-6 rv">
+            <div class="cicon ig mb-4" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-bullhorn"></i></div>
+            <h3 class="text-lg mb-2">Visibilité &amp; Communication</h3>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.7;">Votre logo sur notre site, nos supports de communication et nos événements. Un accès à notre communauté engagée.</p>
+          </div>
+          <div class="card p-6 rv" style="transition-delay:.1s;">
+            <div class="cicon ie mb-4" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-chart-line"></i></div>
+            <h3 class="text-lg mb-2">Impact Mesurable</h3>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.7;">Des rapports réguliers sur l'impact de votre soutien. Des indicateurs concrets pour communiquer sur votre engagement RSE.</p>
+          </div>
+          <div class="card p-6 rv" style="transition-delay:.2s;">
+            <div class="cicon is mb-4" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-network-wired"></i></div>
+            <h3 class="text-lg mb-2">Réseau International</h3>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.7;">Accès à notre réseau franco-asiatique d'experts, d'institutions et d'associations. Des opportunités de collaboration uniques.</p>
+          </div>
+          <div class="card p-6 rv" style="transition-delay:.3s;">
+            <div class="cicon igo mb-4" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-seedling"></i></div>
+            <h3 class="text-lg mb-2">Impact Environnemental</h3>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.7;">Contribuez directement à la régénération des sols et à la protection de la biodiversité. Un impact concret et mesurable sur votre territoire et en Asie.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Why Partner With Us -->
-    <section class="py-16 section-gradient">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Pourquoi Devenir Partenaire ?</h2>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="benefit-card bg-white rounded-xl p-6 text-center card-hover">
-                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="benefit-icon fas fa-chart-line text-blue-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">Accès à des terrains réels et opérationnels</h3>
-                </div>
-                
-                <div class="benefit-card bg-white rounded-xl p-6 text-center card-hover">
-                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="benefit-icon fas fa-certificate text-green-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">production de données exploitables</h3>
-                </div>
-                
-                <div class="benefit-card bg-white rounded-xl p-6 text-center card-hover">
-                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="benefit-icon fas fa-users text-yellow-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">méthodologie claire et rigoureuse</h3>
-                </div>
-                
-                <div class="benefit-card bg-white rounded-xl p-6 text-center card-hover">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="benefit-icon fas fa-handshake text-purple-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">visibilité institutionnelle sérieuse</h3>
-                </div>
-            </div>
+    <!-- Wave -->
+    <div style="background:var(--cream);line-height:0;">
+      <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:70px;"><path d="M0,0 C480,70 960,0 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/></svg>
+    </div>
+
+    <!-- TYPES DE PARTENARIATS -->
+    <section id="types" class="py-20" style="background:#fff;">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 rv">
+          <span class="stag">Nos offres</span>
+          <h2 class="stitle">Types de <span class="ac">partenariats</span></h2>
+          <div class="dline mx-auto mt-4"></div>
         </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="type-card rv" style="background:linear-gradient(135deg,rgba(45,106,79,.04) 0%,#fff 100%);border-color:var(--g700);">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="cicon ig" style="width:56px;height:56px;font-size:1.5rem;flex-shrink:0;"><i class="fas fa-university"></i></div>
+              <div>
+                <h3 class="text-xl mb-1">Partenaire Académique</h3>
+                <p style="font-size:.78rem;color:var(--g700);font-weight:600;letter-spacing:.05em;text-transform:uppercase;">Universités · Instituts · Laboratoires</p>
+              </div>
+            </div>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.75;margin-bottom:1rem;">Collaborez avec nous sur des projets de recherche, des études d'impact et des programmes d'enseignement liés au biochar et à la régénération des sols.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--g700);flex-shrink:0;"></i> Accès aux données de terrain</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--g700);flex-shrink:0;"></i> Co-publication scientifique</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--g700);flex-shrink:0;"></i> Stages et thèses encadrés</li>
+            </ul>
+          </div>
+          <div class="type-card rv" style="background:linear-gradient(135deg,rgba(160,82,45,.04) 0%,#fff 100%);border-color:var(--earth);transition-delay:.1s;">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="cicon ie" style="width:56px;height:56px;font-size:1.5rem;flex-shrink:0;"><i class="fas fa-building-columns"></i></div>
+              <div>
+                <h3 class="text-xl mb-1">Partenaire Institutionnel</h3>
+                <p style="font-size:.78rem;color:var(--earth);font-weight:600;letter-spacing:.05em;text-transform:uppercase;">Collectivités · Mairies · Régions</p>
+              </div>
+            </div>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.75;margin-bottom:1rem;">Intégrez nos projets dans vos politiques environnementales locales. Nous pouvons déployer des actions de sensibilisation et des projets pilotes sur votre territoire.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--earth);flex-shrink:0;"></i> Actions de terrain locales</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--earth);flex-shrink:0;"></i> Sensibilisation des habitants</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--earth);flex-shrink:0;"></i> Rapports d'impact territoriaux</li>
+            </ul>
+          </div>
+          <div class="type-card rv" style="background:linear-gradient(135deg,rgba(124,154,126,.06) 0%,#fff 100%);border-color:var(--sage);transition-delay:.2s;">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="cicon is" style="width:56px;height:56px;font-size:1.5rem;flex-shrink:0;"><i class="fas fa-leaf"></i></div>
+              <div>
+                <h3 class="text-xl mb-1">Partenaire Environnemental</h3>
+                <p style="font-size:.78rem;color:#5d7a5f;font-weight:600;letter-spacing:.05em;text-transform:uppercase;">ONG · Associations · Fondations</p>
+              </div>
+            </div>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.75;margin-bottom:1rem;">Rejoignez notre réseau d'organisations engagées. Mutualisons nos ressources et nos compétences pour amplifier l'impact de nos actions respectives.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:#5d7a5f;flex-shrink:0;"></i> Projets communs</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:#5d7a5f;flex-shrink:0;"></i> Partage de ressources</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:#5d7a5f;flex-shrink:0;"></i> Communication croisée</li>
+            </ul>
+          </div>
+          <div class="type-card rv" style="background:linear-gradient(135deg,rgba(200,150,62,.06) 0%,#fff 100%);border-color:var(--gold);transition-delay:.3s;">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="cicon igo" style="width:56px;height:56px;font-size:1.5rem;flex-shrink:0;"><i class="fas fa-briefcase"></i></div>
+              <div>
+                <h3 class="text-xl mb-1">Partenaire Corporate</h3>
+                <p style="font-size:.78rem;color:var(--earth);font-weight:600;letter-spacing:.05em;text-transform:uppercase;">Entreprises · PME · Grandes sociétés</p>
+              </div>
+            </div>
+            <p style="color:var(--muted);font-size:.875rem;line-height:1.75;margin-bottom:1rem;">Intégrez Green Elysium dans votre stratégie RSE. Mécénat de compétences, sponsoring de projets ou dons : nous adaptons le partenariat à vos objectifs.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--gold);flex-shrink:0;"></i> Visibilité sur nos supports</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--gold);flex-shrink:0;"></i> Rapport RSE personnalisé</li>
+              <li style="display:flex;align-items:center;gap:.625rem;font-size:.85rem;color:var(--muted);"><i class="fas fa-check-circle" style="color:var(--gold);flex-shrink:0;"></i> Événements co-organisés</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-blue-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
-                    <p class="text-blue-200 mb-8">
-                        Rejoignez notre mission pour un environnement plus propre et durable. 
-                        Votre soutien compte !
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-yellow-400 w-6"></i>
-                            <span class="ml-4">contact@greenelysium4.org</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-yellow-400 w-6"></i>
-                            <span class="ml-4">Lun-Ven : 9h00-18h00</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex space-x-4 mt-8">
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/green-elysium" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="cc" class="bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-white text-blue-900 rounded-lg p-6">
-    <h3 class="text-xl font-bold mb-4">Envoyez-nous un message</h3>
-    <form action="https://formspree.io/f/xzdeylak" method="POST" class="needs-validation">
-        <input type="hidden" name="_next" value="https://www.greenelysium.org/merci.html" />
-        
-        <input type="hidden" name="_autoresponse" value="Merci de nous avoir contactés ! Nous avons bien reçu votre message." />
-        
-        <input type="hidden" name="_subject" value="Nouveau message depuis votre site" />
-        
-        <!-- ✅ Piège anti-spam - le cacher avec CSS -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+    <!-- Wave -->
+    <div style="background:#fff;line-height:0;">
+      <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:70px;"><path d="M0,35 C360,0 1080,70 1440,35 L1440,70 L0,70 Z" fill="#faf7f2"/></svg>
+    </div>
 
-        <div class="grid md:grid-cols-2 gap-4 mb-4">
-            <input type="text" name="name" placeholder="Nom*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
-            
-            <input type="email" name="_replyto" placeholder="Email*" class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" required>
+    <!-- FORMULAIRE -->
+    <section class="py-20" style="background:var(--cream);">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-12 rv">
+          <span class="stag">Prenons contact</span>
+          <h2 class="stitle">Demande de <span class="ac">partenariat</span></h2>
+          <div class="dline mx-auto mt-4"></div>
+          <p class="mt-4" style="color:var(--muted);font-size:.95rem;">Remplissez ce formulaire et nous vous répondrons sous 48h pour discuter des possibilités de collaboration.</p>
         </div>
-        
-        <input type="text" name="subject" placeholder="Sujet" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500">
-        
-        <textarea name="message" placeholder="Votre message*" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:border-blue-500" required></textarea>
-        
-        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 rounded-lg transition">
-            Envoyer le message
-        </button>
-    </form>
-</div>
+        <div class="card p-8 rv">
+          <form action="https://formspree.io/f/xzdeylak" method="POST">
+            <input type="hidden" name="_subject" value="Demande de partenariat – Green Elysium">
+            <div class="grid md:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label class="form-label" for="prenom">Prénom</label>
+                <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Jean" required>
+              </div>
+              <div>
+                <label class="form-label" for="nom">Nom</label>
+                <input class="form-input" type="text" id="nom" name="nom" placeholder="Dupont" required>
+              </div>
             </div>
+            <div class="grid md:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label class="form-label" for="email">Email professionnel</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jean@organisation.fr" required>
+              </div>
+              <div>
+                <label class="form-label" for="organisation">Organisation</label>
+                <input class="form-input" type="text" id="organisation" name="organisation" placeholder="Nom de votre organisation" required>
+              </div>
+            </div>
+            <div class="mb-5">
+              <label class="form-label" for="type">Type de partenariat souhaité</label>
+              <select class="form-input" id="type" name="type" required>
+                <option value="">Sélectionnez un type…</option>
+                <option value="academique">Partenaire Académique</option>
+                <option value="institutionnel">Partenaire Institutionnel</option>
+                <option value="environnemental">Partenaire Environnemental</option>
+                <option value="corporate">Partenaire Corporate</option>
+                <option value="autre">Autre / À discuter</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label class="form-label" for="message">Votre message</label>
+              <textarea class="form-input" id="message" name="message" rows="4" placeholder="Décrivez votre projet de collaboration, vos objectifs, le contexte de votre organisation…" required style="resize:vertical;min-height:120px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-green w-full justify-center" style="border-radius:12px;padding:1rem;">
+              <i class="fas fa-paper-plane"></i> Envoyer ma demande
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <a href="index.html" class="flex items-center space-x-3 mb-4">
-                        <img src="assets/Logo.jpg" alt="GREEN ELYSIUM" class="h-10 w-auto">
-                        <span class="font-bold">GREEN ELYSIUM</span>
-                    </a>
-                    <p class="text-gray-400 text-sm">
-                        Association française dédiée à la protection environnementales.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Navigation</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-white transition">Accueil</a></li>
-                        <li><a href="missions.html" class="hover:text-white transition">Missions</a></li>
-                        <li><a href="projets.html" class="hover:text-white transition">Projets</a></li>
-                        <li><a href="partenaires.html" class="hover:text-white transition">Partenaires</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Documents</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="CR-ListeDirigeant.pdf" class="hover:text-white transition">Statuts</a></li>
-                        <li><a href="Mention Légal.txt" class="hover:text-white transition">Mentions légales</a></li>
-                        <li><a href="Politique de confidentialité.txt" class="hover:text-white transition">Politique de confidentialité</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2026 GREEN ELYSIUM. Tous droits réservés. | Agrément N° W173011218</p>
-            </div>
+    <!-- CTA RÉSEAUX -->
+    <section class="py-16" style="background:linear-gradient(135deg,var(--g900) 0%,var(--g700) 100%);">
+      <div class="max-w-5xl mx-auto px-6 text-center rv">
+        <h2 class="stitle mb-3" style="color:#fff;">Suivez-nous sur les <span style="color:var(--gold-lt);">réseaux</span></h2>
+        <p class="mb-8" style="color:rgba(255,255,255,.6);font-size:.95rem;">Restez informé de nos actualités et rejoignez notre communauté en ligne.</p>
+        <div class="flex justify-center gap-4">
+          <a href="https://www.facebook.com/GreenElysiumInternational" target="_blank" rel="noopener" class="btn btn-owh"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="https://www.instagram.com/green_elysium_international/" target="_blank" rel="noopener" class="btn btn-owh"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.linkedin.com/company/green-elysium" target="_blank" rel="noopener" class="btn btn-gold"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script>
-        // Toggle mobile menu
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-        }
-        
-        // Filter partners
-        function filterPartners(category) {
-            const cards = document.querySelectorAll('.partner-card');
-            const buttons = document.querySelectorAll('.category-tab');
-            
-            // Update active button
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            cards.forEach(card => {
-                if (category === 'all') {
-                    card.classList.remove('hidden');
-                } else {
-                    if (card.dataset.category === category) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                }
-            });
-        }
-        
-        // Handle form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            alert('Demande de partenariat envoyée avec succès! Notre équipe vous contactera dans les plus brefs délais.');
-            event.target.reset();
-        }
-        
-        // Handle newsletter subscription
-        function handleNewsletter(event) {
-            event.preventDefault();
-            alert('Inscription à la newsletter réussie! Merci de votre intérêt.');
-            event.target.reset();
-        }
-        
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-        
-        // Observe elements
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-        
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-        
-        // Add shadow on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-xl');
-            } else {
-                header.classList.remove('shadow-xl');
-            }
-        });
-    </script>
+  <footer class="pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/Logo.jpg" alt="Green Elysium" class="w-12 h-12 rounded-full object-cover" style="border:2px solid rgba(255,255,255,.15);">
+            <span class="ftitle text-xl">GREEN ELYSIUM</span>
+          </div>
+          <p style="color:rgba(255,255,255,.45);font-size:.85rem;line-height:1.8;max-width:300px;" class="mb-5">Association agréée pour la protection de l'environnement. Active en France et en Asie depuis 2026.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/GreenElysiumInternational" class="soc" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/green_elysium_international/" class="soc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/green-elysium" class="soc" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="ftitle">Navigation</p>
+          <a href="index.html" class="flink">Accueil</a>
+          <a href="mission.html" class="flink">Notre Mission</a>
+          <a href="projets.html" class="flink">Nos Projets</a>
+          <a href="actions.html" class="flink">Nos Actions</a>
+          <a href="partenaires.html" class="flink">Partenaires</a>
+          <a href="contact.html" class="flink">Contact</a>
+        </div>
+        <div>
+          <p class="ftitle">Contact</p>
+          <a href="mailto:contact@greenelysium.org" class="flink"><i class="fas fa-envelope mr-2" style="opacity:.5;"></i>contact@greenelysium.org</a>
+          <span class="flink"><i class="fas fa-map-marker-alt mr-2" style="opacity:.5;"></i>France &amp; Asie</span>
+          <span class="flink"><i class="fas fa-clock mr-2" style="opacity:.5;"></i>Lun–Ven · 9h–18h</span>
+          <a href="index.html#don" class="btn btn-gold mt-4 py-2 px-4 text-xs"><i class="fas fa-heart"></i> Faire un don</a>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,.08);margin:0 0 1.5rem;">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-3" style="font-size:.75rem;color:rgba(255,255,255,.3);">
+        <p>© 2026 Green Elysium International · Association loi 1901</p>
+        <p>Fait avec <i class="fas fa-heart" style="color:#ef4444;"></i> pour la planète</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 60));
+    function toggleMenu() { document.getElementById('navMenu').classList.toggle('open'); }
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.rv,.rvl,.rvr').forEach(el => ro.observe(el));
+  </script>
 </body>
 </html>
-
-
-
